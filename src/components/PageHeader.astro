@@ -1,6 +1,5 @@
----
-import Icon from "astro-icon";
----
+import { Icon } from "astro-icon";
+import vercelLogo from "https://media.discordapp.net/attachments/1062513593284829366/1150902229000273934/download.gif";
 
 <div
   class="relative z-10 py-4 px-6 flex justify-between"
@@ -23,15 +22,15 @@ import Icon from "astro-icon";
       <span class="text-xs">
         Deploy on <span class="font-bold">Vercel</span>
       </span>
-      <Icon name="ion:logo-vercel" class="h-4 w-4" />
+      <img src={vercelLogo} alt="Vercel" class="h-4 w-4" />
     </a>
     <a
       target="_blank"
-      aria-label={"github repository"}
+      aria-label="github repository"
       href="https://github.com/igorm84/spotify-astro-transitions"
       class="text-gray-200 hover:text-white"
     >
-      <Icon name="mdi:github" class="h-7 w-7" />
+      <img src={vercelLogo} alt="GitHub" class="h-7 w-7" />
     </a>
   </div>
 </div>
